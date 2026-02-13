@@ -4,15 +4,8 @@
 
 # 1. Load packages used and log file creation
 
-library(metacore)
-library(metatools)
-library(pharmaversesdtm)
 library(admiral)
-library(xportr)
 library(dplyr)
-library(tidyr)
-library(lubridate)
-library(stringr)
 library(here)
 library(ggplot2)
 library(pharmaverseadam)

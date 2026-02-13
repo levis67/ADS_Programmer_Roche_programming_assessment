@@ -9,7 +9,6 @@ library(dplyr)
 library(admiral)
 library(pharmaverseraw)
 library(pharmaversesdtm)
-library(lubridate)
 library(here)
 
 base::sink(here::here("output", "question_1_log.txt"), split = TRUE)

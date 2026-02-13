@@ -4,15 +4,9 @@
 
 # 1. Load packages used and log file creation
 
-library(metacore)
-library(metatools)
 library(pharmaversesdtm)
 library(admiral)
-library(xportr)
 library(dplyr)
-library(tidyr)
-library(lubridate)
-library(stringr)
 library(here)
 library(gtsummary)
 library(pharmaverseadam)
@@ -41,7 +35,7 @@ ae_summary_table <- adae %>%
   ) %>% 
   gtsummary::add_overall(last = TRUE, col_label = "**Total Population**  \nN = {N}") %>% 
   gtsummary::sort_hierarchical() %>% 
-  as_gt()
+  gtsummary::as_gt()
 
 gt::gtsave(ae_summary_table, here("output", "ae_summary_table.html"))
 
